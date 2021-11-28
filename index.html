@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>CallMeKevin Stream Archive Database</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico?">
-  <link rel="apple-touch-icon-precomposed" href="img/favicon-152.png">
-  <link rel="mask-icon" href="img/pinned-tab-icon.svg" color="#000000">-->
-  <meta name="description" content="Collection of all streams for easy access">
-  <meta name="author" content="rawrick">
-  <meta name="mobile-web-app-capable" content="yes">
-  <link id="bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link href="css/main.css" rel="stylesheet">
+  <title>CallMeKevin Stream Archive</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-    
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="nav-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#tabDefault" data-toggle="tab" data-target="#tabDefault">Database</a></li>
-    
-            </ul>
-            <!-- /.nav.navbar-nav -->
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
-
+  <div class="navbar">
     <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>CallMeKevin&nbsp;Stream&nbsp;Archive Database</h1>
-            <p class="lead">Contribute to the DB at the <a href="https://github.com/rawrick/cmk-sa">GitHub Page</a></p>
-          </div>
+      <a class="logo" href="#">CallMeKevin <span>Stream Archive</span> DB</a>
+
+      <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Open Navigation">
+
+      <nav>
+        <img id="mobile-exit" class="mobile-menu-exit" src="img/menu-exit.svg" alt="Exit Navigation">
+
+        <ul class="nav">
+          <li><a href="https://github.com/rawrick/cmk-sa">GitHub</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+        <div class="header">
+            <p class="subhead">CallMeKevin</p>
+            <h1>Stream Archive Database</h1>
+            <a>This site is under construction</a>
         </div>
     </div>
+  </section>
 
+  <script>
+    const mobileBtn = document.getElementById('mobile-cta')
+      nav = document.querySelector('nav')
+      mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+  </script> 
 </body>
 </html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007af3;
+}
+
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    color: #444444;
+}
+
+ul {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+
+    a.logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+        white-space: nowrap;
+        width: auto;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+section.hero {
+    text-align: center;
+
+        .subhead {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: gray;
+            letter-spacing: .3em;
+        }
+    
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.3em;
+            margin-top: .2em;
+        }   
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+
+    img.mobile-menu-exit {
+        float: right;
+        margin: .5em;
+        cursor: pointer;
+    }
+
+    ul.nav {
+        margin-top: 5em;
+    }
+
+    li {
+        
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// responsive design
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background: none;
+            position: unset;
+            height: auto;
+            width: fit-content;
+            padding: 0;
+    
+            ul {
+                display: flex;
+                margin: 0;
+            }
+    
+            a {
+                color: black;
+                font-size: 1em;
+                padding: .1em 1em;
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .header {
+            margin: 3em 3em 0 5em;
+
+            h1 {
+                font-size: 3em;
+                width: 100%;
+            }
+        }
+    }
+}
