@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CallMeKevin Stream Archive</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="navbar">
@@ -28,25 +30,356 @@
   <section class="hero">
     <div class="container">
         <div class="header">
-            <p class="subhead">CallMeKevin</p>
+            
+            <p for="youtube" class="subhead">CallMeKevin</p>
             <h1>Stream Archive Database</h1>
-            <a>This site is under construction</a>
-        </div>
-    </div>
+            <p>This site is under construction</p>
+            <input type="text" id="myInput" placeholder="Search for streams...">
+            <!--
+            <details>
+              <summary>Playing with</summary>
+              <ul class="filterPlayer">
+                <li>
+                  <input class="checkFilter" onkeyup="filterFunction()" checked="true" type="checkbox"    value="maxispio"/>
+                  <label>Maxispio</label>
+                </li>
+              </ul>
+            </details>
+            -->
+    </div>   
+  </section>
+
+  <section class="game-list">
+    <button class="btnExpandHideAllDetails" id="btnExpandHideAllDetails" onclick="openAll()">Expand All</button>
+    <div class="list">
+      <details><summary>Among Us</summary>
+        <a href="https://www.youtube.com/playlist?list=PLk76Pc62dBObkQm2I0ec1E6OgSDs2-zrW">Playlist</a>
+        <ul id="myUL">
+          <li><a href="https://youtu.be/b_XrFyoUP70">Among Us | 2020-11-12</a></li>
+          <li><a href="https://youtu.be/bS8LN0o4xa4">Among Us | 2020-11-05</a></li>
+          <li><a href="https://youtu.be/QQ55LenD_eI">Among Us | 2020-09-22</a></li>
+          <li><a href="https://youtu.be/t6shTXyyxao">Among Us (with Max) | 2020-09-13</a></li>
+          <li><a href="https://youtu.be/9vIIV_M4B-E">Among Us (with Max) | 2020-09-13</a></li>
+          <li><a href="https://youtu.be/MAOxdkimeA8">Among Us & Fall Guys | 2020-09-12</a></li>
+          <li><a href="https://youtu.be/HTG1Lq2UBRk">Among Us (with Max) | 2020-09-06</a></li>
+      </ul>
+      </details>
+      <details><summary>Back 4 Blood</summary>
+        <ul>
+          <li><a href="https://youtu.be/pLJUmlCMoP0">Back 4 Blood | 2020-12-20</a></li>
+      </ul>
+      </details>
+      <details><summary>Call of Duty: Warzone</summary>
+        <a href="https://www.youtube.com/playlist?list=PLk76Pc62dBObb-DJErpSEjW8bYXiJ6b4n">Playlist</a>
+        <ul>
+          <li><a href=""></a></li>
+      </ul>
+      </details>
+      <details><summary>Call of Duty: Black Ops Cold War</summary>
+        <ul>
+          <li><a href="https://youtu.be/Y6BrwUNXnZ4">Call of Duty: Black Ops Cold War | 2020-11-17</a></li>
+      </ul>
+      </details>
+      <details><summary>Crash Bandicoot 4: It’s About Time</summary>
+        <ul>
+          <li><a href="https://youtu.be/Gpjhh4x1hQc">Crash Bandicoot | 2020-09-24</a></li>
+      </ul>
+      </details>
+      <details><summary>Crashday Redline Edition</summary>
+        <ul>
+          <li><a href="https://youtu.be/kbhIY-68b9Q">Crashday Redline Edition & GTA San Andreas | 2020-05-12</a></li>
+      </ul>
+      </details>
+      <details><summary>Crusader Kings III</summary>
+        <ul>
+          <li><a href="https://youtu.be/Eap9_dzufGE">Crusader Kings III (with Irish lads) | 2020-08-31</a></li>
+      </ul>
+      </details>
+      <details><summary>Cuphead</summary>
+        <a href="https://www.youtube.com/playlist?list=PLk76Pc62dBObh8ArrHQ2cp_Y9WmAUayvf">Playlist</a>
+        <ul>
+          <li><a href=""></a></li>
+      </ul>
+      </details>
+      <details><summary>Cyberpunk 2077</summary>
+        <ul>
+          <li><a href="https://youtu.be/y3CiWyL7hqc">Cyberpunk 2077 | 2020-12-10</a></li>
+      </ul>
+      </details>
+      <details><summary>Dead Island</summary>
+        <ul>
+          <li><a href="https://youtu.be/jA_O_rWLnQ4">Dead Island Definitive Collection | 2020-12-05</a></li>
+      </ul>
+      </details>
+      <details><summary>Detroit: Become Human</summary>
+      
+      </details>
+      <details><summary>Dying Light</summary>
+      
+      </details>
+      <details><summary>Fall Guys</summary>
+      
+      </details>
+      <details><summary>FF14 Online</summary>
+      
+      </details>
+      <details><summary>Garry's Mod</summary>
+      
+      </details>
+      <details><summary>Golf It!</summary>
+      
+      </details>
+      <details><summary>GTA V</summary>
+      
+      </details>
+      <details><summary>Harry Potter and the Chamber of Secrets</summary>
+      
+      </details>
+      <details><summary>Hitman 3</summary>
+      
+      </details>
+      <details><summary>Hotshot Racing</summary>
+      
+      </details>
+      <details><summary>Hunt: Showdown</summary>
+      
+      </details>
+      <details><summary>Hyper Scape</summary>
+      
+      </details>
+      <details><summary>It Takes Two</summary>
+      
+      </details>
+      <details><summary>Keep Talking and Nobody Explodes</summary>
+      
+      </details>
+      <details><summary>League of Legends</summary>
+      
+      </details>
+      <details><summary>LEGO Harry Potter Yearrs 5-7</summary>
+      
+      </details>
+      <details><summary>Little Nightmares II</summary>
+      
+      </details>
+      <details><summary>Mafia Definitive Edition</summary>
+      
+      </details>
+      <details><summary>Super Mario 3D All-Stars</summary>
+      
+      </details>
+      <details><summary>Microsoft Flight Simulator</summary>
+      
+      </details>
+      <details><summary>Minecraft</summary>
+      
+      </details>
+      <details><summary>Monopoly Plus</summary>
+      
+      </details>
+      <details><summary>Moving Out</summary>
+      
+      </details>
+      <details><summary>Outriders</summary>
+      
+      </details>
+      <details><summary>Pacify</summary>
+      
+      </details>
+      <details><summary>Paper Mario: The Origami King</summary>
+      
+      </details>
+      <details><summary>Phasmophobia</summary>
+      
+      </details>
+      <details><summary>PHOGS</summary>
+      
+      </details>
+      <details><summary>Pirates of the Caribbean</summary>
+      
+      </details>
+      <details><summary>Pokémon HeartGold</summary>
+      
+      </details>
+      <details><summary>Raft</summary>
+      
+      </details>
+      <details><summary>Resident Evil Village</summary>
+      
+      </details>
+      <details><summary>Red Dead Redemption II</summary>
+      
+      </details>
+      <details><summary>Resident Evil 2</summary>
+      
+      </details>
+      <details><summary>Resident Evil 5</summary>
+      
+      </details>
+      <details><summary>Ride to Hell: Retribution</summary>
+      
+      </details>
+      <details><summary>Rust</summary>
+      
+      </details>
+      <details><summary>Scrap Mechanic</summary>
+      
+      </details>
+      <details><summary>Scrutinized</summary>
+      
+      </details>
+      <details><summary>Sea of Thieves</summary>
+      
+      </details>
+      <details><summary>SimCity</summary>
+      
+      </details>
+      <details><summary>Spelunky 2</summary>
+      
+      </details>
+      <details><summary>Spongebob: Battle for Bikini Bottom Rehydrated</summary>
+      
+      </details>
+      <details><summary>Stardew Valley</summary>
+      
+      </details>
+      <details><summary>Super Mario Party</summary>
+      
+      </details>
+      <details><summary>Surgeon Simulator 2</summary>
+      
+      </details>
+      <details><summary>Survivalists</summary>
+      
+      </details>
+      <details><summary>Table Manners</summary>
+      
+      </details>
+      <details><summary>Tabletop Simulator</summary>
+      
+      </details>
+      <details><summary>Teardown</summary>
+      
+      </details>
+      <details><summary>The Elder Scrolls IV: Oblivion</summary>
+      
+      </details>
+      <details><summary>The Elder Scrolls V: Skyrim SE</summary>
+      
+      </details>
+      <details><summary>The Binding of Isaac Rebirth</summary>
+      
+      </details>
+      <details><summary>The Movies</summary>
+      
+      </details>
+      <details><summary>The Sims 1</summary>
+      
+      </details>
+      <details><summary>The Sims 2</summary>
+      
+      </details>
+      <details><summary>The Dark Pictures Anthology Little Hope</summary>
+      
+      </details>
+      <details><summary>The Forest</summary>
+      
+      </details>
+      <details><summary>The Simpsons: Hit and Run</summary>
+      
+      </details>
+      <details><summary>The Sims 4</summary>
+      
+      </details>
+      <details><summary>The Godfather: The Game</summary>
+      
+      </details>
+      <details><summary>Tony Hawks Pro Skater 1+2</summary>
+      
+      </details>
+      <details><summary>Twin Mirror</summary>
+      
+      </details>
+      <details><summary>Uno</summary>
+      
+      </details>
+      <details><summary>Untitled Goose Game</summary>
+      
+      </details>
+      <details><summary>Valheim</summary>
+      
+      </details>
+      <details><summary>Who Wants to Be a Millionaire</summary>
+      
+      </details>
+
+  </div>
   </section>
 
   <script>
+    // mobile menu
     const mobileBtn = document.getElementById('mobile-cta')
-      nav = document.querySelector('nav')
-      mobileBtnExit = document.getElementById('mobile-exit');
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById('mobile-exit');
 
-      mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+      })
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+      })
+    
+    // open/close
+    function openAll() {
+      var elems = document.getElementsByTagName("details");
+      document.getElementById("btnExpandHideAllDetails").innerHTML = "Hide All";
+      document.getElementById("btnExpandHideAllDetails").setAttribute( "onClick", "javascript: closeAll();");
+        
+      for (var i = 0; i <= elems.length; i++){
+        elems[i].setAttribute("open", "true");
+        }
+    }
 
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
+    function closeAll() {	
+      var elems = document.getElementsByTagName("details");
+      document.getElementById("btnExpandHideAllDetails").setAttribute( "onClick", "javascript: openAll();" );
+      document.getElementById("btnExpandHideAllDetails").innerHTML = "Expand All";	
+
+      for (var i = 0; i <= elems.length; i++){
+        elems[i].removeAttribute("open");
+      }
+    }
+
+    // search list
+    /*
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = '';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    */
+    // filter list
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".list li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+
+    // sort list
 
   </script> 
 </body>
