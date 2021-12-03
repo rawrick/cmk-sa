@@ -208,9 +208,9 @@ nav {
 }
 
 @media only screen and (min-width: 1080px) {
-    .container {
-        width: 1080px;
-        margin: 0 auto;
+    
+    .navbar .container {
+            margin: 0 4em 0 4em;
     }
 
     section.hero .container {
