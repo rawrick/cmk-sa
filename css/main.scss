@@ -114,14 +114,16 @@ section.game-list {
 
         details  {
             a {
-                padding-left: 2em;
+                margin-left: 2em;
             }
 
             ul {
-                padding-left: 0em;
+                margin-left: 2em;                
+                list-style-position: outside;
             }
 
             li a {
+                margin-left: 0;
                 text-decoration: none;
             }
         }

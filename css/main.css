@@ -116,14 +116,16 @@ section.game-list .list {
 }
 
 section.game-list .list details a {
-  padding-left: 2em;
+  margin-left: 2em;
 }
 
 section.game-list .list details ul {
-  padding-left: 0em;
+  margin-left: 2em;
+  list-style-position: outside;
 }
 
 section.game-list .list details li a {
+  margin-left: 0;
   text-decoration: none;
 }
 
