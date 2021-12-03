@@ -19,10 +19,6 @@ ul {
   padding: 0;
 }
 
-section {
-  padding: 5em 2em;
-}
-
 h2 {
   font-size: 2em;
 }
@@ -82,6 +78,10 @@ section.hero .subhead {
   letter-spacing: .3em;
 }
 
+section.hero .subhead a {
+  text-decoration: none;
+}
+
 section.hero img {
   height: 24px;
 }
@@ -94,6 +94,7 @@ section.hero h1 {
 
 section.game-list {
   text-align: left;
+  margin: 2em 2em;
 }
 
 section.game-list .btnExpandHideAllDetails {
@@ -110,15 +111,19 @@ section.game-list .btnExpandHideAllDetails:hover {
   color: white;
 }
 
+section.game-list .list {
+  padding-top: 1em;
+}
+
 section.game-list .list details a {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 section.game-list .list details ul {
-  padding-left: 1em;
+  padding-left: 0em;
 }
 
-section.game-list .list details ul li a {
+section.game-list .list details li a {
   text-decoration: none;
 }
 
@@ -215,14 +220,14 @@ nav li a:hover {
     text-align: left;
   }
   section.hero .container .header {
-    margin: 3em 3em 0 5em;
+    margin: 3em 5em 0 5em;
   }
   section.hero .container .header h1 {
     font-size: 3em;
     width: 100%;
   }
   section.game-list {
-    padding: 0 4em;
+    margin: 0em 5em 2em 5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
